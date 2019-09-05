@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 27.952 s <<< FAILURE! - in TestSuite
+inicioConsultar(mkm.formtest.ConsultarReservaFormTest)  Time elapsed: 1.694 s  <<< FAILURE!
+java.lang.AssertionError: expected [mkm.objhtml.ContinuarReserva@359df09a] but found [mkm.objhtml.ContinuarReserva]
+	at mkm.formtest.ConsultarReservaFormTest.inicioConsultar(ConsultarReservaFormTest.java:31)
+

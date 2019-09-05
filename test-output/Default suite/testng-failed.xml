@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="mkm.formtest.AnularReservaFormTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="inicioAnular"/>
+          <include name="setTime"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- mkm.formtest.AnularReservaFormTest -->
+      <class name="mkm.formtest.ConsultarReservaFormTest">
+        <methods>
+          <include name="inicioConsultar"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="setTime"/>
+          <include name="cleanUp"/>
+        </methods>
+      </class> <!-- mkm.formtest.ConsultarReservaFormTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
