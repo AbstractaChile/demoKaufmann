@@ -1,0 +1,10 @@
+language: java
+dist: xenial
+services:
+  - xvfb
+addons:
+  firefox: "latest"
+script: 
+    mvn clean test -Dsuite="testng.xml"
+before_install:
+  - chmod +x /home/travis/build/ErnestoUrbinaFigueroa/concept/Drivers/geckodriver
