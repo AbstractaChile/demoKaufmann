@@ -3,8 +3,8 @@ dist: xenial
 services:
   - xvfb
 addons:
-  firefox: "latest"
+  chrome: stable
 script: 
     mvn clean test -Dsuite="testng.xml"
 before_install:
-  - chmod +x /home/travis/build/ErnestoUrbinaFigueroa/concept/Drivers/geckodriver
+  - chmod +x /home/travis/build/AbstractaChile/demoKaufmann/chromedriver
