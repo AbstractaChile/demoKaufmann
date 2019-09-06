@@ -18,7 +18,7 @@ public class FondoNegro extends PageObject {
 	}
    	
 	public boolean isInitialized() {
-		wait.until(ExpectedConditions.visibilityOf(fondonegro));
+		//wait.until(ExpectedConditions.visibilityOf(fondonegro));
 		return this.fondonegro.isDisplayed();
 	}
 	
