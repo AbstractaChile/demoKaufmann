@@ -6,24 +6,27 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
-
-
 public class FondoNegro extends PageObject {
-	
-    private WebElement fondonegro =  driver.findElement(By.xpath("/html[1]/body[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]"));//*[@id="SECTIONFONDONEGRO"]
-    
-    	
+
+	private WebElement fondonegro = driver.findElement(By.xpath(
+			"/html[1]/body[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]"));// *[@id="SECTIONFONDONEGRO"]
+
 	public FondoNegro(WebDriver driver) {
 		super(driver);
 	}
-   	
+
 	public boolean isInitialized() {
-		//wait.until(ExpectedConditions.visibilityOf(fondonegro));
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+//		wait.until(ExpectedConditions.visibilityOf(fondonegro));
 		return this.fondonegro.isDisplayed();
 	}
-	
-	public void FondoNegroClick(){
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
+
+	public void FondoNegroClick() {
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click();", fondonegro);
 	}
 }
