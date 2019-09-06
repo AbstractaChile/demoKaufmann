@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 
 public class STipoVehiculo extends PageObject {
 
@@ -27,6 +28,8 @@ public class STipoVehiculo extends PageObject {
 	}
 
 	public void STipoVehiculoOpcionClick() {
-		stipovehiculo.findElement(By.xpath("//option[. = 'Minibus']")).click();
+//		stipovehiculo.findElement(By.xpath("//option[. = 'Minibus']")).click();
+		Select vehiculo = new Select(driver.findElement((By) stipovehiculo));
+		vehiculo.selectByVisibleText("Bus");
 	}
 }
