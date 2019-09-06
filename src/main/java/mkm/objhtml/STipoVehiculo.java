@@ -27,6 +27,6 @@ public class STipoVehiculo extends PageObject {
 	}
 
 	public void STipoVehiculoOpcionClick() {
-		stipovehiculo.findElement(By.xpath("//option[. = 'Bus']")).click();
+		stipovehiculo.findElement(By.xpath("//option[. = 'Minibus']")).click();
 	}
 }
