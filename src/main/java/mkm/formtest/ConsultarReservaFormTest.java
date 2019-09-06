@@ -28,6 +28,6 @@ public class ConsultarReservaFormTest extends FunctionalTest {
 
 		ContinuarReserva sCRV = new ContinuarReserva(driver);
 		Assert.assertTrue(sCRV.isInitialized());
-//	    Assert.assertEquals("mkm.objhtml.ContinuarReserva",sCRV.toString().trim());
+	    Assert.assertEquals("mkm.objhtml.ContinuarReserva",sCRV.toString().trim());
 	}
 }
