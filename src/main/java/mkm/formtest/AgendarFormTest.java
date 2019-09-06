@@ -53,25 +53,25 @@ public class AgendarFormTest extends FunctionalTest{
 		sMCA.SMarcaOpcionClick();
 		sMCA.SMarcaClick();
 		
-	    SModelo sMOD = new SModelo(driver);
-	    Assert.assertTrue(sMOD.isInitialized());
-	    sMOD.isInitialized();
-	    sMOD.ingresaModelo("FUSO ROSA");
-	    
-	    SPatente sPAT = new SPatente(driver);
-	    Assert.assertTrue(sPAT.isInitialized());
-	    sPAT.isInitialized();
-	    sPAT.ingresaPatente("CPFB37");
-	    
-	    SKilometraje sKMT = new SKilometraje(driver);
-	    Assert.assertTrue(sKMT.isInitialized());
-	    sKMT.isInitialized();
-	    sKMT.ingresaKilometraje("15000");
-	    
-	    SHorometro sHMO = new SHorometro(driver);
-	    Assert.assertTrue(sHMO.isInitialized());
-	    sHMO.isInitialized();
-	    sHMO.ingresaHorometro("99964");
+//	    SModelo sMOD = new SModelo(driver);
+//	    Assert.assertTrue(sMOD.isInitialized());
+//	    sMOD.isInitialized();
+//	    sMOD.ingresaModelo("FUSO ROSA");
+//	    
+//	    SPatente sPAT = new SPatente(driver);
+//	    Assert.assertTrue(sPAT.isInitialized());
+//	    sPAT.isInitialized();
+//	    sPAT.ingresaPatente("CPFB37");
+//	    
+//	    SKilometraje sKMT = new SKilometraje(driver);
+//	    Assert.assertTrue(sKMT.isInitialized());
+//	    sKMT.isInitialized();
+//	    sKMT.ingresaKilometraje("15000");
+//	    
+//	    SHorometro sHMO = new SHorometro(driver);
+//	    Assert.assertTrue(sHMO.isInitialized());
+//	    sHMO.isInitialized();
+//	    sHMO.ingresaHorometro("99964");
 	    
 	    Continuar cTNR = new Continuar(driver);
 		Assert.assertTrue(cTNR.isInitialized());
