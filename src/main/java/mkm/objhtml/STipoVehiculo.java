@@ -10,8 +10,8 @@ import org.openqa.selenium.support.ui.Select;
 
 public class STipoVehiculo extends PageObject {
 
-	@FindBy(id = "vTIPOVEHICULO")
-	private WebElement stipovehiculo;
+//	@FindBy(id = "vTIPOVEHICULO")
+	private WebElement stipovehiculo = driver.findElement(By.xpath("//select[@id='vTIPOVEHICULO']"));
 
 	public STipoVehiculo(WebDriver driver) {
 		super(driver);
@@ -28,8 +28,8 @@ public class STipoVehiculo extends PageObject {
 	}
 
 	public void STipoVehiculoOpcionClick() {
-//		stipovehiculo.findElement(By.xpath("//option[. = 'Minibus']")).click();
-		Select vehiculo = new Select(driver.findElement((By) stipovehiculo));
-		vehiculo.selectByVisibleText("Bus");
+		stipovehiculo.findElement(By.xpath("//option[. = 'Minibus']")).click();
+//		Select vehiculo = new Select(driver.findElement((By) stipovehiculo));
+//		vehiculo.selectByVisibleText("Bus");
 	}
 }

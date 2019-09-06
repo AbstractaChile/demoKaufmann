@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SMarca extends PageObject {
 
-	@FindBy(id = "vMARCA")
-	private WebElement smarca;
+//	@FindBy(id = "vMARCA")
+	private WebElement smarca = driver.findElement(By.xpath("//select[@id='vMARCA']"));
 
 	public SMarca(WebDriver driver) {
 		super(driver);
