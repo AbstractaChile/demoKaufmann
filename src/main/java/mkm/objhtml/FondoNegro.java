@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class FondoNegro extends PageObject {
 	
-    private WebElement fondonegro =  driver.findElement(By.xpath("//div[@id='SECTIONFONDONEGRO']"));
+    private WebElement fondonegro =  driver.findElement(By.xpath("/html[1]/body[1]/form[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]"));//*[@id="SECTIONFONDONEGRO"]
     
     	
 	public FondoNegro(WebDriver driver) {
