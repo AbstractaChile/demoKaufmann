@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SKilometraje extends PageObject {
 
-	@FindBy(id = "vKILOMETROSTEXT")
-	private WebElement skilometraje;
+//	@FindBy(id = "vKILOMETROSTEXT")
+	private WebElement skilometraje = driver.findElement(By.xpath("//select[@id='vKILOMETROSTEXT']"));
 
 	public SKilometraje(WebDriver driver) {
 		super(driver);

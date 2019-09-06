@@ -8,8 +8,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class SHorometro extends PageObject {
 
-	@FindBy(id = "vHOROMETRO")
-	private WebElement shorometro;
+//	@FindBy(id = "vHOROMETRO")
+	private WebElement shorometro = driver.findElement(By.xpath("//select[@id='vHOROMETRO']"));
 
 	public SHorometro(WebDriver driver) {
 		super(driver);

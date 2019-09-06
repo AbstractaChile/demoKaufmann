@@ -9,8 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class Continuar extends PageObject {
 
-	@FindBy(name = "CONTINUAR")
-	private WebElement continuar;
+//	@FindBy(name = "CONTINUAR")
+	private WebElement continuar = driver.findElement(By.xpath("//input[@name='CONTINUAR']"));
 
 	public Continuar(WebDriver driver) {
 		super(driver);
