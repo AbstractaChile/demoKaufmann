@@ -16,7 +16,12 @@ public class SModelo extends PageObject {
 	}
 
 	public boolean isInitialized() {
-		wait.until(ExpectedConditions.visibilityOf(smodelo));
+		try {
+			Thread.sleep(3000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+//		wait.until(ExpectedConditions.visibilityOf(smodelo));
 		return this.smodelo.isDisplayed();
 	}
 
