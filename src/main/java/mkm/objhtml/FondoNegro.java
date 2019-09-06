@@ -21,7 +21,7 @@ public class FondoNegro extends PageObject {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-		wait.until(ExpectedConditions.visibilityOf(fondonegro));
+//		wait.until(ExpectedConditions.visibilityOf(fondonegro));
 		return this.fondonegro.isDisplayed();
 	}
 
