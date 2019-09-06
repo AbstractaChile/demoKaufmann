@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class SModelo extends PageObject {
 
 //	@FindBy(id = "vMODELO")
-	private WebElement smodelo = driver.findElement(By.xpath("//select[@id='vMODELO']"));
+	private WebElement smodelo = driver.findElement(By.xpath("//input[@id='vMODELO']"));
 
 	public SModelo(WebDriver driver) {
 		super(driver);

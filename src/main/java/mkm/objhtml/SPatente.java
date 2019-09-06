@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class SPatente extends PageObject {
 
 //	@FindBy(id = "vPATENTE")
-	private WebElement spatente = driver.findElement(By.xpath("//select[@id='vPATENTE']"));
+	private WebElement spatente = driver.findElement(By.xpath("//input[@id='vPATENTE']"));
 
 	public SPatente(WebDriver driver) {
 		super(driver);
