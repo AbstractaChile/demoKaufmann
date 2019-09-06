@@ -6,7 +6,7 @@ env:
     global:
         -MOZ_HEADLESS=1
 addons:
-  chrome: stable
+  chrome: latest
 script: 
     mvn clean test -Dsuite="testng.xml"
 before_install:
